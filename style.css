@@ -29,7 +29,7 @@ body {
 
 #container {
   width: 1120px;
-  margin: 88px auto 137px;
+  margin: 88px auto;
 }
 
 img {
@@ -40,6 +40,8 @@ img {
 .headline {
   color: var(--text-headline);
   font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
 }
 
 .title-page {
@@ -61,15 +63,10 @@ img {
 }
 
 .title-list {
-  margin-top: 64px;
+  margin: 64px 0;
 }
 
-.title .headline {
-  color: var(--text-headline);
-  font-weight: bold;
-}
-
-.title-list p {
+.title-list .description {
   color: var(--text-secondary);
   margin-bottom: 64px;
 }
@@ -105,11 +102,16 @@ img {
 }
 
 .content-card ul {
+  color: var(--text-secondary);
   font-weight: bold;
 }
 
 .content-card ul li {
   margin-left: 24px;
+}
+
+ul li::marker {
+  color: #333333;
 }
 
 .purple {
@@ -126,4 +128,21 @@ img {
 
 .blue {
   color: #0C51A7;
+}
+
+.text-description {
+  color: var(--text-secondary);
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  margin: 65px 0 48px;
 }
